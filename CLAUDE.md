@@ -23,6 +23,7 @@ Write in ASD-STE100 Simplified Technical English. The reader may not be a data e
 - Churn rate: churned customers divided by all customers in the group.
 
 ## Analysis rules
+- Check for conflicting `Churn` values per `customerID` before you calculate customer churn rates. Report conflicts and request a resolution rule.
 - Say "associated with", never "causes", unless the data comes from an experiment.
 - Show the plan before you run code.
 - Every number in a deliverable must come from code that can be run again.
