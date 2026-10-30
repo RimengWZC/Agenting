@@ -1,0 +1,8 @@
+screen,flagged_rows_data
+Blank customer IDs,0
+Churn outside Yes / No,0
+SeniorCitizen outside binary categories,0
+Contract outside observed term vocabulary,0
+Negative tenure or charges,0
+Phone status inconsistent with multiple-line status,0
+Internet status inconsistent with add-on status,0

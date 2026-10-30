@@ -1,0 +1,36 @@
+{
+  "recommendation": "test_first",
+  "data_issues": [
+    {
+      "column": "customerID / Churn",
+      "issue": "211 IDs have conflicting Churn labels; no dated resolution exists.",
+      "rows_affected": 422,
+      "action": "Retain all rows. Pause customer churn rates and request a source resolution rule."
+    },
+    {
+      "column": "MonthlyCharges",
+      "issue": "Extreme raw values above the documented quartile screening fence; correctness unknown.",
+      "rows_affected": 200,
+      "action": "Flag only. Request billing records and currency confirmation."
+    },
+    {
+      "column": "TotalCharges",
+      "issue": "Whitespace-only blanks; associated tenure values are reported in metrics.json.",
+      "rows_affected": 11,
+      "action": "Keep blanks. Do not replace them with zero."
+    },
+    {
+      "column": "RetentionOfferAccepted",
+      "issue": "Missingness matches Churn exactly across all raw rows; availability timing is unknown.",
+      "rows_affected": 7254,
+      "action": "Treat as a leakage risk. Do not use as a pre-outcome predictor or campaign response measure."
+    },
+    {
+      "column": "dates / margins / offer costs / trial assignment",
+      "issue": "Required history and financial or experimental fields are absent.",
+      "rows_affected": 7254,
+      "action": "Pause spending and financial forecasts. Request the missing inputs."
+    }
+  ],
+  "drivers": []
+}

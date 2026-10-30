@@ -1,0 +1,4 @@
+contract,raw_rows,unique_ids,conflict_ids,yes_only_ids,no_only_ids
+Month-to-month,3977,3875,102,1616,2157
+One year,1526,1473,53,161,1259
+Two year,1751,1695,56,45,1594

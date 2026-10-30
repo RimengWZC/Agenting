@@ -1,0 +1,99 @@
+{
+  "raw_rows": 7254,
+  "unique_ids": 7043,
+  "columns": 23,
+  "raw_bytes": 1038097,
+  "duplicate_ids": 211,
+  "conflicting_ids": 211,
+  "conflict_rows": 422,
+  "extra_id_rows": 211,
+  "exact_duplicate_extra_rows": 0,
+  "conflicted_id_share": 0.029958824364617352,
+  "raw_label_counts": {
+    "No": 5221,
+    "Yes": 2033
+  },
+  "blanks_total_charges": 11,
+  "blanks_offer": 5221,
+  "missing_total_tenures": [
+    "0"
+  ],
+  "monthly_charge_q1": 39.1,
+  "monthly_charge_q3": 91.0,
+  "extreme_multiplier": 3,
+  "monthly_charge_fence": 246.7,
+  "monthly_extreme_rows": 200,
+  "monthly_extreme_ids": 200,
+  "raw_monthly_min": 18.25,
+  "raw_monthly_max": 11515.0,
+  "offer_missingness_matches_churn": 7254,
+  "within_id_conflicts": {
+    "gender": 0,
+    "SeniorCitizen": 0,
+    "Partner": 0,
+    "Dependents": 0,
+    "tenure": 0,
+    "PhoneService": 0,
+    "MultipleLines": 0,
+    "InternetService": 0,
+    "OnlineSecurity": 0,
+    "OnlineBackup": 0,
+    "DeviceProtection": 0,
+    "TechSupport": 0,
+    "StreamingTV": 0,
+    "StreamingMovies": 0,
+    "Contract": 0,
+    "PaperlessBilling": 0,
+    "PaymentMethod": 0,
+    "MonthlyCharges": 0,
+    "TotalCharges": 0,
+    "Churn": 211,
+    "LoyaltyAppUser": 0,
+    "RetentionOfferAccepted": 211
+  },
+  "contract_counts": [
+    {
+      "contract": "Month-to-month",
+      "raw_rows": 3977,
+      "unique_ids": 3875,
+      "conflict_ids": 102,
+      "yes_only_ids": 1616,
+      "no_only_ids": 2157
+    },
+    {
+      "contract": "One year",
+      "raw_rows": 1526,
+      "unique_ids": 1473,
+      "conflict_ids": 53,
+      "yes_only_ids": 161,
+      "no_only_ids": 1259
+    },
+    {
+      "contract": "Two year",
+      "raw_rows": 1751,
+      "unique_ids": 1695,
+      "conflict_ids": 56,
+      "yes_only_ids": 45,
+      "no_only_ids": 1594
+    }
+  ],
+  "budget": 2000000,
+  "pilot_cap": 300000,
+  "horizon_months": 24,
+  "pilot_months": 3,
+  "gross_target": 2400000,
+  "net_target": 400000,
+  "profit_buffer": 0.2,
+  "remaining_budget": 1700000,
+  "raw_blob": "e8c695784970d7d5605f85c377369e9a4a8c3724",
+  "source_commit": "dc208b23c8f539fcdb209ff359a51ab768106e8e",
+  "validation_checks": {
+    "Blank customer IDs": 0,
+    "Churn outside Yes / No": 0,
+    "SeniorCitizen outside binary categories": 0,
+    "Contract outside observed term vocabulary": 0,
+    "Negative tenure or charges": 0,
+    "Phone status inconsistent with multiple-line status": 0,
+    "Internet status inconsistent with add-on status": 0
+  }
+}
